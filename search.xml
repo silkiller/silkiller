@@ -1479,4 +1479,25 @@
         <tag>战争</tag>
       </tags>
   </entry>
+  <entry>
+    <title>outlook客户端显示“没有默认的邮件客户端”</title>
+    <url>/posts/6219665c.html</url>
+    <content><![CDATA[<p>前端时间outlook客户端经常弹出“没有默认的邮件客户端”提示，于是乎在网上找到找解决方案，最后还是在知乎的一个回答中找到了，这里记录一下。</p>
+<a id="more"></a>
+<p>Solution:  </p>
+<ol>
+<li>Open registry by typing regedit in run.  </li>
+<li>Search for the office productguid in HKEY_CLASSES_ROOT\Installer\Components\  </li>
+<li>Right Click the Sub Key that started with (for me) ‘F1291BD604B8604……’  </li>
+<li>Select Permissions, Add ‘Everyone’ and give read only Access to that group.</li>
+</ol>
+<p>作者：逆风而行LEE<br>链接：<a href="https://www.zhihu.com/question/40217178/answer/663110167">https://www.zhihu.com/question/40217178/answer/663110167</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>outlook</tag>
+      </tags>
+  </entry>
 </search>
